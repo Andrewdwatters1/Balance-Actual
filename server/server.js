@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs');
 const salt = bcrypt.genSaltSync(10);
 const hash = bcrypt.hashSync(process.env.BCRYPT_HASH, salt);
 const cron = require('node-cron');
-// const path = require('path');
+const path = require('path');
 
 const authController = require('./authController');
 const habitsController = require('./habitsController');
@@ -31,7 +31,7 @@ app.use(session({
     resave: false
 }))
 
-// app.use(express.static(`${__dirname}/../build`));
+app.use(express.static(`${__dirname}/../build`));
 
 app.post('/auth/register', authController.register);
 app.post('/auth/login', authController.login);
@@ -83,9 +83,9 @@ app.put('/api/scratchpad/:id', notesController.updateScratchPad)
 
 app.put('/api/backgrounds/', backgroundController.updateBackground)
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../build/index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 cron.schedule('1 0 0 * * *', () => {
     habitsController.updateHabitEvents(app);
