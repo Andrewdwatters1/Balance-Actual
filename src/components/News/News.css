@@ -1,0 +1,114 @@
+.content-container{
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    display: flex;
+    overflow: scroll;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.content-container-news-sub {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 80px auto 0 auto;
+    width: 90%;
+}
+
+.news-no-more {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+.news-content-header {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.news-content > p {
+    margin-left: 30px;
+}
+
+.article-title-and-content {
+    float: right;
+    margin-left: 30px;
+}
+.news-hover {
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.news-hover:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+
+.go-button {
+    height: 30px;
+    width: 70px;
+    font-size: 1.1em;
+}
+
+.article-box {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 180px;
+}
+
+.article-box p{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.articles-image {
+    min-width: 210px;
+    max-width: 220px;
+    height: 150px;
+    border-radius: 15px;
+    border: solid white 3px;
+}
+
+.articles-title:hover {
+    color: rgba(233, 88, 88, 0.708);  
+}
+
+.articles-image:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.next-button{
+    position: fixed;
+    top: 15vh;
+    right: 10.8vw;
+    font-size: 3em;
+}
+
+.next-button:hover {
+    opacity: .8;
+}
+
+.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

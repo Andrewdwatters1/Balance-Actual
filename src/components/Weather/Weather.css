@@ -1,0 +1,91 @@
+.weather-box{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 20;
+    pointer-events: all;
+    width:100px;
+    height: 100px;
+}
+
+.weather-box>img{
+    height:24px;
+    width: 24px;
+    position: absolute;
+    top: 12px;
+    right: 75px;
+}
+
+.weather-box>p{
+    font-size: 30px;
+    position: absolute;
+    top: -25px;
+    right: 20px;
+}
+
+.city-name>p{
+    font-size: 11px;
+    position: absolute;
+    white-space: nowrap;
+    top: 36px;
+    right: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.city-name{
+    cursor: pointer;
+}
+
+.weatherModalContainer{
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    width: 730px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 2px;
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.70);
+    z-index: 6;
+}
+
+  .daily-weather-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-left: 30px;
+      margin-top:-25px;
+  }
+
+  .weather-daily{
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+  }
+
+  .temp-wrapper{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: -25px;
+  }
+
+  .weather-forecast-icon{
+      width: 24px;
+      margin-top: -15px;
+  }
+
+  .weather-temp-descriptor{
+      font-size:12px;
+      margin-right: 15px;
+      margin-top: 2px;
+
+  }
+
+  .day-of-the-week-text{
+      font-size: 22px;
+      text-transform: uppercase
+  }
+

@@ -1,0 +1,59 @@
+{
+  "name": "devmountain-group-project",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server/server.js",
+  "dependencies": {
+    "@material-ui/core": "^3.1.0",
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "bfg": "^0.3.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "express-session": "^1.15.6",
+    "google-trends-api": "^4.7.0",
+    "hoek": "^5.0.4",
+    "jest": "^23.6.0",
+    "massive": "^5.4.0",
+    "material": "^0.3.0",
+    "material-ui": "^0.20.2",
+    "moment": "^2.22.2",
+    "node-cron": "^2.0.1",
+    "react": "^16.5.1",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.5.1",
+    "react-geolocation": "^1.0.4",
+    "react-infinite-calendar": "^2.3.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.5",
+    "react-sound": "^1.2.0",
+    "react-toasts": "^2.0.13",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-promise-middleware": "^5.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "/auth": {
+      "target": "http://localhost:3111"
+    },
+    "/api": {
+      "target": "http://localhost:3111"
+    }
+  },
+  "nodemonCongig": {
+    "ext": "js.sql",
+    "watch": "server",
+    "ignore": [
+      "src/*",
+      "public/*"
+    ]
+  }
+}

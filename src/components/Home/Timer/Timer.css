@@ -1,0 +1,99 @@
+.timer-container{
+    height: 250px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.70);
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.70);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 6;
+}
+
+.timer-help-button{
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.timer-minimize-button{
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    width: auto;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.number-circle>p{
+    font-size: 16px;
+    position: relative;
+    top: -16px;
+    right: -5.5px;
+}
+
+.timer-details-wrapper{
+    margin-top: 55px;
+    text-align: center;
+}
+
+.timer-details-box{
+    width: 100%;
+    text-align: center;
+}
+
+.timer-title{
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.timer-select-time{
+    font-size: 25px;
+}
+
+.timer-buttons-div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.timer-buttons{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+.plus-minus{
+    height: 13px;
+    width: auto;
+    margin: 0 15px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.plus-minus:hover{
+    opacity: 1;
+}
+
+.number-circle{
+    position: relative;
+    top: 40px;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.timer-indicator-width{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: space-evenly;
+}

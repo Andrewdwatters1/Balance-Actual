@@ -1,0 +1,183 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    color: #FAFAFA;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+body { 
+    background: 
+    linear-gradient(
+        rgba(0,0,0,0.516),
+        rgba(0,0,0,0.516)
+    ),
+    url('../../assets/background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.top-menu{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.516);
+    display: none;
+    z-index: 3;
+}
+
+.top-menu-button{
+    position: relative;
+    margin: 0 auto;
+    width: 60px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 3;
+}
+
+.top-menu-button img{
+    height:20px;
+    width: auto;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.left-menu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 3;
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 500ms ease-in-out;   
+    opacity: 0.6;
+    z-index: 100000000;
+}
+
+.left-menu:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease-in-out;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.left-menu div{
+    height: 35px;
+    width: 35px;
+    opacity: inherit;
+}
+
+.left-menu div:hover{
+    cursor: pointer;
+    background-position: 0 0;
+}
+
+.home-center-card{
+    position: absolute;
+    text-align: center;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 10vh;
+    height: 100%;
+    width: 60vw;
+    /* background-color: rgba(0, 0, 0, 0.694); */
+}
+
+.home-center-card>h1{
+    font-size: 160px;
+    margin-bottom: 15px;
+}
+
+.home-center-card>h2{
+font-size: 40px;
+margin-top: -20px;
+font-family: 'Raleway';
+letter-spacing: 1.2px;
+}
+
+.home-center-card>span{
+    font-size: 22px;
+    letter-spacing: .8px;
+}
+
+.home-spacer{
+    height: 50px;
+}
+
+.event-date{
+    color: rgba(255, 255, 255, 0.701);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.event-time{
+    color: rgba(255, 255, 255, 0.701);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+
+.logout-user-button {
+    position: absolute;
+    bottom: 1vh;
+    left: -20vw;
+    margin-left: 80px;
+    height: 45px;
+    width: 140px;
+    z-index: 3;
+}
+.logout-user-button:hover {
+    background-color: rgba(255, 255, 255, 0.701);
+    cursor: pointer;
+}
+.icon-home{
+    background: url("../../assets/home.png") bottom;
+}
+
+.icon-notepad{
+    background: url("../../assets/notepad.png") bottom;
+}
+
+.icon-todos{
+    background: url("../../assets/todo.png") bottom;
+}
+
+.icon-habits{
+    background: url("../../assets/infinity.png") bottom;
+}
+
+.icon-calendar{
+    background: url("../../assets/calendar.png") bottom;
+}
+
+.icon-news{
+    background: url("../../assets/news.png") bottom;
+}
+
+.icon-timer{
+    background: url("../../assets/timer.png") bottom;
+}
+
+.icon-info{
+    background: url("../../assets/info.png") bottom;
+}
+
+.icon-settings{
+    background: url("../../assets/settings.png") bottom;
+}
+
+.icon-logout{
+    background: url('../../assets/exit.png') bottom;
+}
