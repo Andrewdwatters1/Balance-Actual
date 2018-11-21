@@ -15,6 +15,7 @@ module.exports = {
       });
     });
   },
+
   login: (req, res) => {
     let db = req.app.get('db');
     let { username, password } = req.body;
@@ -32,14 +33,17 @@ module.exports = {
       });
     });
   },
+
   logout: (req, res) => {
     req.session.destroy()
     res.sendStatus(200);
   },
+
   logoutUser: (req, res) => {
     res.session = {};
     res.sendStatus(200);
   },
+
   getCurrentUser: (req, res) => {
     if (req.session.user) {
       console.log(req.session.user)

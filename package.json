@@ -42,10 +42,10 @@
   },
   "proxy": {
     "/auth": {
-      "target": "http://localhost:3111"
+      "target": "http://localhost:3002"
     },
     "/api": {
-      "target": "http://localhost:3111"
+      "target": "http://localhost:3002"
     }
   },
   "nodemonCongig": {
