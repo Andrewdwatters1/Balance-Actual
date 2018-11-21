@@ -85,7 +85,8 @@ class Login extends Component {
   render() {
     const { firstName, lastName, username, email, password, zipcode } = this.state;
     let loginSubmitEnabled = username && password;
-    let registerSubmitEnabled = firstName && lastName && username && email && password && zipcode
+    let registerSubmitEnabled = firstName && lastName && username && email && password && zipcode;
+
     return (
       <div className="loginBackgroundGradient">
         <div className="content-container login-content-container">
@@ -131,13 +132,13 @@ class Login extends Component {
                     <p>LAST NAME</p>
                     <input type="submit text" onChange={this.handleLastNameInput} value={this.state.lastName} className="login-input"></input>
                     <p>EMAIL</p>
-                    <input type="submit text" onChange={this.handleEmailInput} value={this.state.email} className="login-input"></input>
+                    <input type="submit text" onChange={this.handleEmailInput} value={this.state.email} pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@domain.com" className="login-input"></input>
                     <p>USERNAME</p>
                     <input type="submit text" onChange={this.handleUsernameInput} value={this.state.username} className="login-input"></input>
                     <p>PASSWORD</p>
                     <input type="password" onChange={this.handlePasswordInput} value={this.state.password} className="login-input"></input>
                     <p>ZIP CODE</p>
-                    <input type="submit text" onChange={this.handleZipcodeInput} value={this.state.zipcode} placeholder="xxxxx-xxxx" className="login-input"></input>
+                    <input type="submit text" onChange={this.handleZipcodeInput} value={this.state.zipcode} pattern="[0-9]{5}" placeholder="XXXXX" className="login-input"></input>
                   </form>
                 </div>
 
